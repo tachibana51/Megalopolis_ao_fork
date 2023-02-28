@@ -463,8 +463,8 @@ $config->showPages = array
 // Tweet Button を表示するか (true/false)
 $config->showTweetButton = array
 (
-	Configuration::ON_AUTHOR => true,		// 作者別一覧に表示するか
-	Configuration::ON_TAG => true,			// タグ別一覧に表示するか
+	Configuration::ON_AUTHOR => false,		// 作者別一覧に表示するか
+	Configuration::ON_TAG => false,			// タグ別一覧に表示するか
 	Configuration::ON_ENTRY => true,		// 作品に表示するか
 );
 
