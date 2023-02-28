@@ -1,0 +1,7 @@
+version: "3"
+services:
+  ssw-app-server:
+    build: .
+    ports:
+      - "9999:80"
+
