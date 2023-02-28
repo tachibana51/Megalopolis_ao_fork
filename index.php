@@ -1,5 +1,5 @@
 <?php
-// no deprecated 
+// no deprecated
 error_reporting(E_ALL & ~E_DEPRECATED & ~E_STRICT);
 
 define("APP_DIR", "req/");
