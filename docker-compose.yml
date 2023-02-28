@@ -1,0 +1,11 @@
+version: "3"
+services:
+  ssw-app-server:
+    user: www-data
+    build: .
+    ports:
+      - "9999:80"
+    volumes:
+      # TODO: release args dev/prod
+      - ./store-dev:/var/www/ssw_l/store/:rw
+

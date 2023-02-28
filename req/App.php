@@ -1,8 +1,8 @@
 <?php
 class App
 {
-	const NAME = "Megalopolis";
-	const VERSION = 47;
+	const NAME = "Megalopolis_ao";
+	const VERSION = "47-fork.0.5";
 	const MEGALITH_VERSION = 50;
 
 	const META_TABLE = "meta";
@@ -72,6 +72,8 @@ class App
 
 	static function stripMagicQuotesSlashes()
 	{
+		// not deprecated in php 8.0
+		/*
 		if (get_magic_quotes_gpc())
 		{
 			$_GET = self::stripSlashesRecursive($_GET);
@@ -79,6 +81,7 @@ class App
 			$_REQUEST = self::stripSlashesRecursive($_REQUEST);
 			$_COOKIE = self::stripSlashesRecursive($_COOKIE);
 		}
+		*/
 	}
 
 	private static function stripSlashesRecursive($arg)
