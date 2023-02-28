@@ -371,7 +371,7 @@ $config->footers = array
 // 既定の一覧表示形式 (特定値)
 // - Configuration::LIST_DOUBLE		二列で表示します。
 // - Configuration::LIST_SINGLE		一列で表示します。
-$config->listType = Configuration::LIST_DOUBLE;
+$config->listType = Configuration::LIST_SINGLE;
 
 // New や Up と表示される期間 (日)
 // 0 の場合無効になります
