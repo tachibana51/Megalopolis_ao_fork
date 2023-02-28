@@ -1,8 +1,8 @@
 <?php
 class App
 {
-	const NAME = "Megalopolis";
-	const VERSION = 47;
+	const NAME = "Megalopolis_ao";
+	const VERSION = "47-fork.0.5";
 	const MEGALITH_VERSION = 50;
 
 	const META_TABLE = "meta";
