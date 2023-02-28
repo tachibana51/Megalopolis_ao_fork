@@ -200,15 +200,15 @@ $config->defaultName = "名前が無い程度の能力";
 // false の場合、名前が空欄の場合代わりに既定の名前が使用されます
 $config->requireName = array
 (
-	Configuration::ON_ENTRY => false,		// 作品において必須にするか
+	Configuration::ON_ENTRY => true,		// 作品において必須にするか
 	Configuration::ON_COMMENT => false,		// コメントにおいて必須にするか
 );
 
 // 編集または削除キーの入力を必須にするか (true/false)
 $config->requirePassword = array
 (
-	Configuration::ON_ENTRY => false,		// 作品において必須にするか
-	Configuration::ON_COMMENT => false,		// コメントにおいて必須にするか
+	Configuration::ON_ENTRY => true,		// 作品において必須にするか
+	Configuration::ON_COMMENT => true,		// コメントにおいて必須にするか
 );
 
 // 投稿キー (文字列)
@@ -302,7 +302,7 @@ $config->ignoreDisallowedWordsWhenAdmin = true;
 
 // 本文の最小サイズ (bytes)
 // 0 の場合無制限になります
-$config->minBodySize = 0;
+$config->minBodySize = 1;
 
 // 本文の最大サイズ (bytes)
 // 0 の場合無制限になります
